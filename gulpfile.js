@@ -49,7 +49,7 @@ gulp.task('copy', function () {
   return gulp.src([
     'src/img/**',
     'src/js/**',
-    'src/index.html'
+    'src/*.html'
   ], {
     base: 'src'
   })
@@ -57,7 +57,7 @@ gulp.task('copy', function () {
 });
 
 gulp.task('copy-html', function () {
-  return gulp.src('src/index.html', {base: 'src'})
+  return gulp.src('src/*.html', {base: 'src'})
     .pipe(gulp.dest('build'));
 });
 
