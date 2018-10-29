@@ -1,8 +1,22 @@
 /* Подключение всех импортов */
 
-@import 'varisblas.scss';
+@import "variables.scss";
+
+@import "logo";
+
+@import "Header/header.scss";
+@import "Header/header-navigation.scss";
+
+@import "Main/main.css";
 
 
 .body {
   font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
 }

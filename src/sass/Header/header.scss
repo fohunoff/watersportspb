@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.header {
+  padding-top: 18px;
+
+  color: white;
+  background-color: $blue;
+  background-image: url(../img/header-bg.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.header__org-name {
+  font-size: 18px;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
