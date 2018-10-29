@@ -1,0 +1,9 @@
+**/*.psd
+
+assets/
+node_modules/
+build/
+
+src/fonts/**/*
+
+package-lock.json
