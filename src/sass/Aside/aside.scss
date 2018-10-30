@@ -16,4 +16,52 @@
 
 .aside__list {
   @include list-reset();
+
+  box-sizing: border-box;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.aside__list--flexible {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+}
+
+.aside__list--wrap {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aside__item {
+  width: 100%;
+  padding: 10px 5px;
+
+  a {
+    display: inline-block;
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0px 30px;
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover::after {
+      position: absolute;
+      content: '';
+
+      top: 0;
+      left: 0;
+
+      width: 5px;
+      height: 100%;
+
+      background-color: $blue;
+    }
+  }
 }

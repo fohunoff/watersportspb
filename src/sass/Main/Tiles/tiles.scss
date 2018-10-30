@@ -1,0 +1,68 @@
+.tiles {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.tile {
+  flex-basis: 33%;
+  flex-flow: 1;
+
+  min-width: 150px;
+  min-height: 200px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* бэкграунды */
+  &:nth-child(1) {
+    background-image: url(../img/1.jpg);
+  }
+  &:nth-child(2) {
+    background-image: url(../img/2.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(../img/3.jpg);
+  }
+  &:nth-child(4) {
+    background-image: url(../img/4.jpg);
+  }
+  &:nth-child(5) {
+    background-image: url(../img/5.jpg);
+  }
+  &:nth-child(6) {
+    background-image: url(../img/6.jpg);
+  }
+}
+
+.tile__link {
+  display: inline-block;
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s;
+  }
+}
+
+.tile__link span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+

@@ -7,9 +7,9 @@
   <title>«Школа высшего спортивного мастерства по водным видам спорта»</title>
   
   <link rel="stylesheet" href="css/style.min.css">
-
+  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-
+  
 </head>
 
 <body class="body">
@@ -38,8 +38,8 @@
   <main class="main">
     <div class="container flex-row"> 
       
-      <section class="aside">
-
+      <div class="aside">
+        
         <nav>
           <h2 class="aside-menu__title">Наша команда</h2>
           <ul class="aside-menu">
@@ -51,80 +51,107 @@
         
         <h2 class="block-title">Документы</h2>
         <ul class="aside__list">
-          <li><a href="#">Заголовок 1</a></li>
+          <li class="aside__item"><a href="#">Заголовок 1</a></li>
         </ul>
         
         <h3 class="block-title">Документы для поступления</h3>
         <ul class="aside__list">
-          <li><a href="#">Заголовок 2</a></li>
-          <li><a href="#">Заголовок 3</a></li>
+          <li class="aside__item"><a href="#">Заголовок 2</a></li>
+          <li class="aside__item"><a href="#">Заголовок 3</a></li>
         </ul>
         
         <h3 class="block-title">Документы для поступления</h3>
         <ul class="aside__list">
-          <li><a href="#">Заголовок 4</a></li>
-          <li><a href="#">Заголовок 5</a></li>
-          <li><a href="#">Заголовок 4</a></li>
-          <li><a href="#">Заголовок 5</a></li>
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
+          <li class="aside__item"><a href="#">Заголовок 5</a></li>
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
+          <li class="aside__item"><a href="#">Заголовок 5</a></li>
         </ul>
         
         <h3 class="block-title">План программы</h3>
         <ul class="aside__list">
-          <li><a href="#">Заголовок 4</a></li>
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
         </ul>
-      </section>
+      </div>
       
       <div class="main__content">
-
+        
         <section class="actual-news">
-          <h2>Последние новости</h2>
-          <article>
-            <h3>Разные суждения, но с позитивом</h3>
-            <p>17 декабря 2017</p>
-          </article>
-          <article>
-            <h3>Еще два Кубка ШВСМ</h3>
-            <p>17 декабря 2017</p>
-          </article>
-          <article>
-            <h3>Что запланировали, то и сделали!</h3>
-            <p>17 декабря 2017</p>
-          </article>
-          <article>
-            <h3>Разные суждения, но с позитивом</h3>
-            <p>17 декабря 2017</p>
-          </article>
-          <article>
-            <h3>Разные суждения, но с позитивом</h3>
-            <p>17 декабря 2017</p>
-          </article>
-          
-          <a href="#">Показать больше</a>
+          <h2 class="actual-news__title">Последние новости</h2>
+          <div class="actual-news__side">
+            <article class="actual-news__content actual-news__content--active">
+              <img class="actual-news__image" src="img/1.jpg" width="200" alt="Первая новость" srcset="">
+              <h3>Разные суждения, но с позитивом</h3>
+              <p>17 декабря 2017</p>
+            </article>
+            <article class="actual-news__content">
+              <img class="actual-news__image" src="img/2.jpg" width="200" alt="Вторая новость" srcset="">
+              <h3>Еще два Кубка ШВСМ</h3>
+              <p>17 декабря 2017</p>
+            </article>
+            <article class="actual-news__content">
+              <img class="actual-news__image" src="img/3.jpg" width="200" alt="Третья новость" srcset="">
+              <h3>Что запланировали, то и сделали!</h3>
+              <p>17 декабря 2017</p>
+            </article>
+            <article class="actual-news__content">
+              <img class="actual-news__image" src="img/4.jpg" width="200" alt="Третья новость" srcset="">
+              <h3>Разные суждения, но с позитивом</h3>
+              <p>17 декабря 2017</p>
+            </article>
+            
+            <a class="show-more" href="#">Показать больше »</a>
+          </div>
         </section>
         
         
         <section>
           <h2 class="block-title">Виды спорта</h2>
-          <ul>
-            <li><a href="#">Гребной спорт</a></li>
-            <li><a href="#">Парусный спорт</a></li>
-            <li><a href="#">Гребля на байдарках и каное</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          
+          <ul class="tiles">
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Гребной спорт</span>
+              </a>
+            </li>
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Парусный спорт</span>
+              </a>
+            </li>
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Гребля на байдарках и каное</span>
+              </a>
+            </li>
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Гребной слалом</span>
+              </a>
+            </li>
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Водно-моторный спорт</span>
+              </a>
+            </li>
+            <li class="tile">
+              <a class="tile__link" href="#">
+                <span>Триатлон</span>
+              </a>
+            </li>
           </ul>
         </section>
         
-        <section>
-          <div>
-            video
-          </div>
+        <section class="main__video">
+            <video  width="600" type="video/mp4" controls="controls">
+              <source src="http://video.inmedis.ru/STORAGE02/clip_bitrates/i7PwTTy8tVfuYzTYtcHgqptYyw4kt5r1.mp4">
+            </video>
         </section>
         
       </div>
       
-      <section class="aside">
-
+      <div class="aside">
+        
         <nav>
           <h2 class="aside-menu__title">Галерея</h2>
           <ul class="aside-menu">
@@ -137,60 +164,65 @@
         <section>
           <h2 class="block-title">Календарь</h2>
           <div>
-            Календарь
+            <p style="color: black">Календарь</p>
           </div>
         </section>
         
         <section>
           <h2 class="block-title">Наши пратнёры</h2>
-          <ul class="aside__list">
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="aside__list aside__list--flexible aside__list--wrap">
+            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
+            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
+            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
           </ul>
         </section>
         
-      </section>
+      </div>
     </div>
   </main>
   
-  <footer>
-    <div>
-      <img class="logo" src="img/logo.svg" alt="Logo" width="50">
-      <p>Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
-      <p>
-        «Школа высшего спортивного мастерства<br>
-        по водным видам спорта»
-      </p>
-    </div>
-    
-    <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Об учреждении</a></li>
-        <li><a href="#">Виды спорта</a></li>
-        <li><a href="#">Спортивная подготовка</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    
-    <div>
-      <p>
-        Крестовский остров, Северная дорога, <br>
-        западная оконечность Гребного канала.
-      </p>
+  <footer class="footer">
+    <div class="container flex-row footer-justify">
+      <div class="footer-logo">
+        <img class="footer-logo__image" src="img/logo.svg" alt="Logo" width="50">
+        <p class="footer-logo__sub">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
+        <p class="footer-logo__name">
+          «Школа высшего спортивного мастерства<br>
+          по водным видам спорта»
+        </p>
+      </div>
       
-      <p>Телефоны:</p>
-      <ul>
-        <li>Спортивный Отдел +7(901)370-23-48;</li>
-        <li>Бухгалтерия +7(901)373-10-46;</li>
-        <li>Секретарь +7(921)774-71-62;</li>
-        <li>Факс +7(921)789-99-62;</li>
-      </ul>
+      <nav>
+        <ul class="footer__links">
+          <li><a class="link" href="#">Главная</a></li>
+          <li><a href="#">Об учреждении</a></li>
+          <li><a href="#">Виды спорта</a></li>
+          <li><a href="#">Спортивная подготовка</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
       
-      <p>E-mail: hssvvs@mail.ru</p>        
-    </div>
+      <div>
+        <p>
+          Крестовский остров, Северная дорога, <br>
+          западная оконечность Гребного канала.
+        </p>
+        
+        <p>Телефоны:</p>
+        <ul class="footer__contacts">
+          <li>Спортивный Отдел +7(901)370-23-48;</li>
+          <li>Бухгалтерия +7(901)373-10-46;</li>
+          <li>Секретарь +7(921)774-71-62;</li>
+          <li>Факс +7(921)789-99-62;</li>
+        </ul>
+        
+        <p>E-mail: <a href="mailto:hssvvs@mail.ru">hssvvs@mail.ru</a></p>        
+      </div>
+    </div class="">
   </footer>
+  
+  <script src="js/news-slide.js"></script>
+  
 </body>
 </html>

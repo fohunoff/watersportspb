@@ -1,0 +1,68 @@
+.footer {
+  padding: 5px;
+  margin-top: -2px; // Для устранения артефакта градиента в main блоке
+
+  color: white;
+  font-size: 12px;
+  background-color: $black;
+}
+
+.footer-justify {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Поставить класс в нужное место */
+.footer a {
+  color: white;
+}
+
+.footer-logo {
+  position: relative;
+}
+
+.footer-logo__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin-top: 20px;
+}
+
+.footer-logo__sub,
+.footer-logo__name {
+  margin-left: 70px;
+}
+
+.footer-logo__sub {
+  margin-top: 10px;
+  font-size: 8px;
+}
+
+.footer-logo__name {
+  margin-top: 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer__links {
+  @include list-reset();
+  font-size: 12px;
+
+  margin-top: 10px;
+
+  li {
+    padding-bottom: 5px;
+  }
+}
+
+.footer__contacts {
+  @include list-reset();
+  font-size: 12px;
+
+  margin-top: 10px;
+
+  li {
+    padding-bottom: 5px;
+  }
+}

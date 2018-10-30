@@ -12,6 +12,8 @@
 
 @import "Main/main.scss";
 
+@import "Footer/footer.scss";
+
 /* Стили без привязки к блоку */
 
 .body {
@@ -40,6 +42,8 @@
   color: white;
   font-size: 16px;
   font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
 
   background-color: $blue;
 }

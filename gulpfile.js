@@ -61,6 +61,11 @@ gulp.task('copy-html', function () {
     .pipe(gulp.dest('build'));
 });
 
+gulp.task('copy-js', function () {
+  return gulp.src('src/js/**/*.js', {base: 'src'})
+    .pipe(gulp.dest('build/'));
+});
+
 gulp.task('clean', function () {
   return del('build');
 });
@@ -83,5 +88,6 @@ gulp.task('serve', function () {
   /* добавить watch для js */
 
   gulp.watch('src/sass/**/*.scss', gulp.series(['style']));
+  gulp.watch('src/js/**/*.js').on('change', gulp.series(['copy-js', server.reload]));
   gulp.watch('src/*.html').on('change', gulp.series(['copy-html', server.reload]));
 });
