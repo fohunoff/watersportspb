@@ -1,0 +1,19 @@
+@import "aside-menu.scss";
+
+.aside {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+
+  color: white;
+  
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $gray;
+}
+
+.aside__list {
+  @include list-reset();
+}

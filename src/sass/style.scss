@@ -1,17 +1,22 @@
 /* Подключение всех импортов */
 
 @import "variables.scss";
+@import "mixin.scss";
 
-@import "logo";
+@import "Logo/logo.scss";
 
 @import "Header/header.scss";
 @import "Header/header-navigation.scss";
 
-@import "Main/main.css";
+@import "Aside/aside.scss";
 
+@import "Main/main.scss";
+
+/* Стили без привязки к блоку */
 
 .body {
-  font-family: Tahoma, sans-serif;
+  // font-family: Tahoma, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -19,4 +24,22 @@
 .container {
   max-width: 1300px;
   margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.block-title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+
+  background-color: $blue;
 }

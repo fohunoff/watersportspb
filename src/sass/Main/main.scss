@@ -1,0 +1,10 @@
+@import "News/actual-news.scss";
+
+.main {
+  background-color: $blue;
+}
+
+.main__content {
+  flex-grow: 1;
+  background-color: white;
+}
