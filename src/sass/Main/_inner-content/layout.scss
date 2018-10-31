@@ -1,0 +1,16 @@
+$width: 860px;
+
+@import "Document/documentation.scss";
+
+.layout {
+  max-width: $width;
+
+  margin: auto;
+  padding: 20px;
+}
+
+.layout__title {
+  font-size: 20px;
+  color: $blue;
+  text-transform: uppercase;
+}

@@ -1,6 +1,8 @@
 @import "News/actual-news.scss";
 @import "Tiles/tiles.scss";
 
+@import "_inner-content/layout.scss";
+
 .main {
   background-color: $blue;
   background-image: linear-gradient($blue, $black);

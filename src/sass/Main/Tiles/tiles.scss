@@ -21,22 +21,22 @@
 
   /* бэкграунды */
   &:nth-child(1) {
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/tile-rowing.jpg);
   }
   &:nth-child(2) {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/tile-sail.jpg);
   }
   &:nth-child(3) {
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/tile-canoe.jpg);
   }
   &:nth-child(4) {
-    background-image: url(../img/4.jpg);
+    background-image: url(../img/tile-slalom.jpg);
   }
   &:nth-child(5) {
-    background-image: url(../img/5.jpg);
+    background-image: url(../img/tile-motor-boat.jpg);
   }
   &:nth-child(6) {
-    background-image: url(../img/6.jpg);
+    background-image: url(../img/tile-triathlon.jpg);
   }
 }
 
@@ -62,7 +62,15 @@
 
 .tile__link span {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  display: block;
+  width: 100%;
+
+  bottom: 0px;
+  left: 0px;
+
+  box-sizing: border-box;
+  padding: 5px;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
