@@ -10,9 +10,9 @@
 
 .tile {
   flex-basis: 33%;
-  flex-flow: 1;
+  flex-grow: 1;
 
-  min-width: 150px;
+  min-width: 120px;
   min-height: 200px;
 
   background-position: center;

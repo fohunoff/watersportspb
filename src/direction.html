@@ -25,12 +25,12 @@
     
     <nav class="header-navigation">
       <ul class="container header-navigation__list">
-        <li><a class="header-navigation__item header-navigation__item--active" href="#">Главная</a></li>
+        <li><a class="header-navigation__item" href="/index.html">Главная</a></li>
         <li><a class="header-navigation__item" href="#">Об учреждении</a></li>
         <li><a class="header-navigation__item" href="#">Виды спорта</a></li>
         <li><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
         <li><a class="header-navigation__item" href="#">Новости</a></li>
-        <li><a class="header-navigation__item" href="/direction.html">Контакты</a></li>
+        <li><a class="header-navigation__item header-navigation__item--active" href="/direction.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +39,6 @@
     <div class="container flex-row"> 
       
       <div class="aside">
-        
         <nav class="aside__top-nav">
           <h2 class="aside-menu__title">Наша команда</h2>
           <ul class="aside-menu">
@@ -75,106 +74,87 @@
       </div>
       
       <div class="main__content">
-        
-        <section class="actual-news">
-          <h2 class="actual-news__title">Последние новости</h2>
-          <div class="actual-news__side">
-            <article class="actual-news__content actual-news__content--active">
-              <img class="actual-news__image" src="img/1.jpg" width="200" alt="Первая новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/2.jpg" width="200" alt="Вторая новость" srcset="">
-              <h3>Еще два Кубка ШВСМ</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/3.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Что запланировали, то и сделали!</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/4.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            
-            <a class="show-more" href="#">Показать больше »</a>
-          </div>
-        </section>
-        
-        
-        <section>
-          <h2 class="block-title">Виды спорта</h2>
+        <section class="layout">
+          <h2 class="layout__title">Руководство</h2>
           
-          <ul class="tiles">
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Парусный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребля на байдарках и каное</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной слалом</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Водно-моторный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Триатлон</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="main__video">
-            <video  width="600" type="video/mp4" controls="controls">
-              <source src="http://video.inmedis.ru/STORAGE02/clip_bitrates/i7PwTTy8tVfuYzTYtcHgqptYyw4kt5r1.mp4">
-            </video>
-        </section>
-        
-      </div>
-      
-      <div class="aside">
-        
-        <nav class="aside__top-nav">
-          <h2 class="aside-menu__title">Галерея</h2>
-          <ul class="aside-menu">
-            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
-          </ul>
-        </nav>
-        
-        <section>
-          <h2 class="block-title">Календарь</h2>
-          <div>
-            <p style="color: black">Календарь</p>
+          <div class="layout__content">
+            
+            <!--
+              <div class="dir-person">
+                <img class="dir-person__photo" src="img/director.jpg" alt="Директор" width="400">
+                <div class="dir-person__info">
+                  <p class="dir-person__second-name">Фамилия</p>
+                  <p class="dir-person__other-name">Имя Отчество</p>
+                  <p class="dir-person__place">должность</p>
+                  <div class="dir-person__description">
+                    <p>Описание. Не обязательно.</p>
+                  </div>
+                  <p class="dir-person__phone">Телефон: +0 (000) 000-00-00</p>
+                  <p class="dir-person__schedule">
+                    График приёма:<br>
+                    <span class="time">четверг с 14:00 до 17:00</span>
+                  </p>
+                  <button class="audience__button">Записаться на приём</button>
+                </div>
+              </div>
+            -->
+            
+            <div class="dir-person">
+              <img class="dir-person__photo" src="img/direction/kezhaeva.jpg" alt="Кежаева" width="400">
+              <div class="dir-person__info">
+                <p class="dir-person__second-name">Кежаева</p>
+                <p class="dir-person__other-name">Марина Васильевна</p>
+                <p class="dir-person__place">Директор СДЮСШОР «ШВСМ по ВВС»</p>
+                <div class="dir-person__description">
+                  <p>Может еще здесь написать какое-то обращение от руководителя? Например, что на своем посту МВ поднимает престиж школы, работает над новыми целями и планом их достижение.</p>
+                  <p>Написать от первого лица, думаю, читать будет приятно. Пару предложений буквально.</p>
+                </div>
+                <p class="dir-person__phone">Телефон: +7 (931) 338-04-44</p>
+                <p class="dir-person__schedule">
+                  График приёма:<br>
+                  <span class="time">четверг с 14:00 до 17:00</span>
+                </p>
+                <button class="audience__button">Записаться на приём</button>
+              </div>
+            </div>
+            
+            <div class="dir-person">
+              <img class="dir-person__photo" src="img/direction/evdakimova.jpg" alt="Евдокимова" width="400">
+              <div class="dir-person__info">
+                <p class="dir-person__second-name">Евдокимова</p>
+                <p class="dir-person__other-name">Наталья Юрьевна</p>
+                <p class="dir-person__place">Заместитель директора по учебно-спортивной работе</p>
+                <div class="dir-person__description">
+                  
+                </div>
+                <p class="dir-person__phone">Телефон: +7 (931) 338-04-45</p>
+                <p class="dir-person__schedule">
+                  График приёма:<br>
+                  <span class="time">четверг с 14:00 до 17:00</span>
+                </p>
+                <button class="audience__button">Записаться на приём</button>
+              </div>
+            </div>
+            
+            <div class="dir-person">
+              <img class="dir-person__photo" src="img/direction/merkushin.jpg" alt="Меркушкин" width="400">
+              <div class="dir-person__info">
+                <p class="dir-person__second-name">Меркушкин</p>
+                <p class="dir-person__other-name">Максим Борисович</p>
+                <p class="dir-person__place">Заместитель директора по административно-хозяйственной деятельности</p>
+                <div class="dir-person__description">
+                  
+                </div>
+                <p class="dir-person__phone">Телефон: +7 (931) 338-04-45</p>
+                <p class="dir-person__schedule">
+                  График приёма:<br>
+                  <span class="time">четверг с 14:00 до 17:00</span>
+                </p>
+                <button class="audience__button">Записаться на приём</button>
+              </div>
+            </div>
+            
           </div>
-        </section>
-        
-        <section>
-          <h2 class="block-title">Наши пратнёры</h2>
-          <ul class="aside__list aside__list--flexible aside__list--wrap">
-            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
-            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
-            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
-          </ul>
         </section>
         
       </div>

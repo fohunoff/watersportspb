@@ -1,9 +1,7 @@
-$width: 860px;
-
-@import "Document/documentation.scss";
+$layout-width: 860px;
 
 .layout {
-  max-width: $width;
+  max-width: $layout-width;
 
   margin: auto;
   padding: 20px;
@@ -14,3 +12,10 @@ $width: 860px;
   color: $blue;
   text-transform: uppercase;
 }
+
+.layout__content {
+  max-width: $layout-width;
+}
+
+@import "Document/documentation.scss";
+@import "Direction/direction.scss";
