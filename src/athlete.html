@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="css/style.min.css">
-
   <title>«Школа высшего спортивного мастерства по водным видам спорта»</title>
-
+  
+  <link rel="stylesheet" href="css/style.min.css">
+  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   
 </head>
@@ -26,7 +25,7 @@
     
     <nav class="header-navigation">
       <ul class="container header-navigation__list">
-        <li><a class="header-navigation__item header-navigation__item--active" href="./">Главная</a></li>
+        <li><a class="header-navigation__item" href="./">Главная</a></li>
         <li><a class="header-navigation__item" href="#">Об учреждении</a></li>
         <li><a class="header-navigation__item" href="#">Виды спорта</a></li>
         <li><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
@@ -76,109 +75,58 @@
       </div>
       
       <div class="main__content">
-        
-        <section class="actual-news">
-          <h2 class="actual-news__title">Последние новости</h2>
-          <div class="actual-news__side">
-            <article class="actual-news__content actual-news__content--active">
-              <img class="actual-news__image" src="img/1.jpg" width="200" alt="Первая новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/2.jpg" width="200" alt="Вторая новость" srcset="">
-              <h3>Еще два Кубка ШВСМ</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/3.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Что запланировали, то и сделали!</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/4.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            
-            <a class="show-more" href="#">Показать больше »</a>
-          </div>
-        </section>
-        
-        
-        <section>
-          <h2 class="block-title">Виды спорта</h2>
+        <section class="layout">
           
-          <ul class="tiles">
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Парусный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребля на байдарках и каное</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной слалом</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Водно-моторный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Триатлон</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="main__video">
-            <video  width="600" type="video/mp4" controls="controls">
-              <source src="http://video.inmedis.ru/STORAGE02/clip_bitrates/i7PwTTy8tVfuYzTYtcHgqptYyw4kt5r1.mp4">
-            </video>
+          <h2 class="layout__title layout__title--center"></h2>
+          <div class="layout__content">
+            
+            <a href="./athletes.html">« Назад</a>
+            
+            <div class="athlete">
+              
+              <img class="athlete__photo" src="img/athletes/1.jpg" alt="Иван Иванов" width="100%">
+              
+              <div class="athlete__info">
+                <h3 class="athlete__name">Иван Иванов</h3>
+                
+                <p class="athlete__spec">Гребной спорт</p>
+                <p class="athlete__status">Трехкратный чемпион</p>
+                <p class="athlete__coach">Тренер: <a href="#">Василий Иванов</a></p>
+                
+                <div class="athlete__bio">
+                  <p>Роман Николаевич Широков – полузащитник «ЦСКА», чемпион России 2010, 2012 и 2016 года, обладатель Кубка и Суперкубка УЕФА (2008) и России (2008 и 2011). Бронзовый призёр Чемпионата Европы 2008 года и Чемпионата России 2009 года. Лучший игрок Лиги Чемпионов 2011 года.</p>
+                  <p>В июле 2016 года объявил о прекращении карьеры.</p>
+                </div>
+                
+                <div class="achievement">
+                  <h3 class="achievement__title">Достижения</h3>
+                  <ul class="achievement__list">
+                    <li class="achievement__item">чемпионат мира по гребному спорту 2016</li>
+                    <li class="achievement__item">Кубок России по гребному спорту 2017</li>
+                    <li class="achievement__item">чемпионат мира по гребному спорту 2016</li>
+                    <li class="achievement__item">Кубок России по гребному спорту 2017</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Прятать, если нет соответствий -->
+            <section class="attachment">
+              <h2 class="attachment__title">Фото</h2>
+              <p>Слайдер</p>
+            </section>
+            
+            <!-- Прятать, если нет соответствий -->
+            <section class="attachment">
+              <h2 class="attachment__title">Видео</h2>
+              <p>Блок с видео</p>
+            </section>
+            
+          </div>
         </section>
         
       </div>
       
-      <div class="aside">
-        
-        <nav class="aside__top-nav">
-          <h2 class="aside-menu__title">Галерея</h2>
-          <ul class="aside-menu">
-            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
-          </ul>
-        </nav>
-        
-        <section>
-          <h2 class="block-title">Календарь</h2>
-          <div>
-            <p style="color: black">Календарь</p>
-          </div>
-        </section>
-        
-        <section>
-          <h2 class="block-title">Наши пратнёры</h2>
-          <ul class="aside__list aside__list--flexible aside__list--wrap">
-            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
-            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
-            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
-          </ul>
-        </section>
-        
-      </div>
     </div>
   </main>
   

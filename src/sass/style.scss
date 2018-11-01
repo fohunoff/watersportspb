@@ -1,18 +1,8 @@
-/* Подключение всех импортов */
-
 @import "variables.scss";
 @import "mixin.scss";
 
-@import "Logo/logo.scss";
+@import "fonts.scss";
 
-@import "Header/header.scss";
-@import "Header/header-navigation.scss";
-
-@import "Aside/aside.scss";
-
-@import "Main/main.scss";
-
-@import "Footer/footer.scss";
 
 /* Стили без привязки к блоку */
 
@@ -50,3 +40,17 @@
 
   background-color: $blue;
 }
+
+
+/* Подключение всех импортов */
+
+@import "Logo/logo.scss";
+
+@import "Header/header.scss";
+@import "Header/header-navigation.scss";
+
+@import "Aside/aside.scss";
+
+@import "Main/main.scss";
+
+@import "Footer/footer.scss";

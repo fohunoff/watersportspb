@@ -16,6 +16,7 @@
   box-sizing: border-box;
   padding: 0 8px;
 
+  text-align: center;
   border-left: 1px solid $blue;
 }
 
@@ -45,16 +46,25 @@
   flex-wrap: wrap;
 }
 
+.athlete__link {
+  text-decoration: none;
+}
+
+.athlete__link:hover {
+  background-color: lighten($gray, 1);
+}
+
 .athlete-preview {
   width: 200px;
   box-sizing: border-box;
 
   text-align: center;
+  margin: 10px;
   margin-bottom: 20px;
   padding: 10px;
 }
 
-.athlete__photo {
+.athlete-preview__photo {
   width: 150px;
   height: 150px;
 
@@ -62,15 +72,17 @@
   overflow: hidden;
 }
 
-.athlete__name,
-.athlete__status {
+.athlete-preview__name,
+.athlete-preview__status {
   margin: 0;
 }
 
-.athlete__name {
+.athlete-preview__name {
+  color: $black;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.athlete__status {
+.athlete-preview__status {
   color: $blue;
 }

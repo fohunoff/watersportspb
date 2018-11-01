@@ -1,0 +1,99 @@
+.athlete {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+
+  font-size: 14px;
+}
+
+.athlete__photo {
+  display: inline-block;
+  min-width: 260px;
+  flex-grow: 1;
+  margin-right: 40px;
+}
+
+.athlete__info {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.athlete__name,
+.athlete__spec,
+.athlete__status,
+.athlete__coach {
+  margin: 0;
+}
+
+.athlete__name {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.athlete__spec {
+  color: $blue;
+  font-weight: bold;
+}
+
+.athlete__coach a {
+  color: $black;
+}
+
+.athlete__coach a:hover {
+  color: lighten($black, 20);
+}
+
+.achievement {
+  box-sizing: border-box;
+}
+
+.achievement__title {
+  color: $blue;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.achievement__list {
+  @include list-reset();
+  box-sizing: border-box;
+}
+
+.achievement__item {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+
+.achievement__item::before {
+  position: absolute;
+  content: '';
+
+  top: 2px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url(../img/cup.png);
+  background-position: center;
+  background-repeat: none;
+}
+
+.attachment {
+  box-sizing: border-box;
+}
+
+.attachment__title {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $blue;
+}
