@@ -47,8 +47,9 @@ gulp.task('images', function () {
 
 gulp.task('copy', function () {
   return gulp.src([
+    'src/fonts/**/*.{woff,woff2,txt}',
     'src/img/**',
-    'src/js/**',
+    'src/js/**/*.js',
     'src/*.html'
   ], {
     base: 'src'
