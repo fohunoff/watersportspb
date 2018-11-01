@@ -1,0 +1,15 @@
+.parthners {
+  background-color: $gray;
+}
+
+.parthners__list {
+  @include list-reset();
+  padding: 20px;
+}
+
+@media (max-width: $extra-large) {
+  .parthners {
+    width: 280px;
+    flex-grow: 1;
+  }
+}

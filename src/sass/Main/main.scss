@@ -4,8 +4,21 @@
 }
 
 .main__content {
-  flex-grow: 1;
   background-color: white;
+}
+
+.main__layout {
+  float: left;
+}
+
+@media (max-width: $extra-large) {
+  .main__content {
+    flex-grow: 1;
+  }
+
+  .main__layout {
+    float: none;
+  }
 }
 
 .main__video {

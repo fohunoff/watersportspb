@@ -1,0 +1,10 @@
+.calendar {
+  background-color: $gray;
+}
+
+
+@media (max-width: $extra-large) {
+  .calendar {
+    width: 280px;
+  }
+}

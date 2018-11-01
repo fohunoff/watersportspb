@@ -1,12 +1,14 @@
-$block-width: 245px;
+// Ширина текстового блока новостей и ссылки, а также отступ фото новости
+$block-width: 310px;
 
-$magic-height-for-slide-and-sida-top-menu: 317px;
+// Магическая высота, чтобы выровнять голубые линии на макете
+$magic-height-for-slide-and-sidе-top-menu: 317px;
 
 .actual-news {
   position: relative;
   
   width: 100%;
-  height: $magic-height-for-slide-and-sida-top-menu;
+  height: $magic-height-for-slide-and-sidе-top-menu;
   
   display: flex;
   flex-direction: column;
@@ -56,7 +58,7 @@ $magic-height-for-slide-and-sida-top-menu: 317px;
 
 .actual-news__side {
   width: 100%;
-  height: $magic-height-for-slide-and-sida-top-menu;
+  height: $magic-height-for-slide-and-sidе-top-menu;
   
   display: flex;
   flex-direction: column;

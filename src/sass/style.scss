@@ -7,8 +7,7 @@
 /* Стили без привязки к блоку */
 
 .body {
-  // font-family: Tahoma, sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Tahoma', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -26,7 +25,6 @@
 .block-title {
   display: block;
   box-sizing: border-box;
-  
   
   width: 100%;
   margin: 0;
@@ -47,10 +45,6 @@
 @import "Logo/logo.scss";
 
 @import "Header/header.scss";
-@import "Header/header-navigation.scss";
-
 @import "Aside/aside.scss";
-
 @import "Main/main.scss";
-
 @import "Footer/footer.scss";
