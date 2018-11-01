@@ -1,0 +1,76 @@
+.tab-navigation {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.tab-navigation__item {
+  box-sizing: border-box;
+  padding: 0 8px;
+
+  border-left: 1px solid $blue;
+}
+
+.tab-navigation__item:first-child {
+  border: none;
+}
+
+.tab-navigation__link {
+  color: black;
+  text-decoration: none;
+}
+
+.tab-navigation__link:hover {
+  color: lighten($blue, 20);
+}
+
+.tab-navigation__link--active {
+  color: $blue;
+}
+
+
+.athletes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.athlete-preview {
+  width: 200px;
+  box-sizing: border-box;
+
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.athlete__photo {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.athlete__name,
+.athlete__status {
+  margin: 0;
+}
+
+.athlete__name {
+  text-transform: uppercase;
+}
+
+.athlete__status {
+  color: $blue;
+}

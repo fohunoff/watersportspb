@@ -1,4 +1,4 @@
-$layout-width: 860px;
+$layout-width: 900px;
 
 .layout {
   max-width: $layout-width;
@@ -13,9 +13,14 @@ $layout-width: 860px;
   text-transform: uppercase;
 }
 
+.layout__title--center {
+  text-align: center;
+}
+
 .layout__content {
   max-width: $layout-width;
 }
 
 @import "Document/documentation.scss";
 @import "Direction/direction.scss";
+@import "Athletes/athletes.scss";

@@ -25,7 +25,7 @@
     
     <nav class="header-navigation">
       <ul class="container header-navigation__list">
-        <li><a class="header-navigation__item header-navigation__item--active" href="./">Главная</a></li>
+        <li><a class="header-navigation__item" href="./">Главная</a></li>
         <li><a class="header-navigation__item" href="#">Об учреждении</a></li>
         <li><a class="header-navigation__item" href="#">Виды спорта</a></li>
         <li><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
@@ -75,109 +75,88 @@
       </div>
       
       <div class="main__content">
-        
-        <section class="actual-news">
-          <h2 class="actual-news__title">Последние новости</h2>
-          <div class="actual-news__side">
-            <article class="actual-news__content actual-news__content--active">
-              <img class="actual-news__image" src="img/1.jpg" width="200" alt="Первая новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/2.jpg" width="200" alt="Вторая новость" srcset="">
-              <h3>Еще два Кубка ШВСМ</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/3.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Что запланировали, то и сделали!</h3>
-              <p>17 декабря 2017</p>
-            </article>
-            <article class="actual-news__content">
-              <img class="actual-news__image" src="img/4.jpg" width="200" alt="Третья новость" srcset="">
-              <h3>Разные суждения, но с позитивом</h3>
-              <p>17 декабря 2017</p>
-            </article>
+        <section class="layout">
+          <h2 class="layout__title layout__title--center">Лучшие спортсмены по итогам 2017 года</h2>
+          <div class="layout__content">
             
-            <a class="show-more" href="#">Показать больше »</a>
+            <nav>
+              <ul class="tab-navigation">
+                <li class="tab-navigation__item"><a class="tab-navigation__link tab-navigation__link--active" href="#">Гребной спорт</a></li>
+                <li class="tab-navigation__item"><a class="tab-navigation__link" href="#">Гребля на байдарках и каноэ</a></li>
+                <li class="tab-navigation__item"><a class="tab-navigation__link" href="#">Гребной слалом</a></li>
+                <li class="tab-navigation__item"><a class="tab-navigation__link" href="#">Парусный спорт</a></li>
+                <li class="tab-navigation__item"><a class="tab-navigation__link" href="#">Водно-моторный спорт</a></li>
+                <li class="tab-navigation__item"><a class="tab-navigation__link" href="#">Триатлон</a></li>
+              </ul>
+            </nav>
+            
+            <div class="athletes">
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/1.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/2.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/1.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/2.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/1.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/2.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/1.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/2.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/1.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+              
+              <article class="athlete-preview">
+                <img class="athlete__photo" src="img/athletes/2.jpg" alt="Имя спортсмена">
+                <p class="athlete__name">Иван Иванов</p>
+                <p class="athlete__status">Чемпион мира по гребному спорту 2017</p>
+              </article>
+            </div>            
+            
           </div>
-        </section>
-        
-        
-        <section>
-          <h2 class="block-title">Виды спорта</h2>
-          
-          <ul class="tiles">
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Парусный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребля на байдарках и каное</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Гребной слалом</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Водно-моторный спорт</span>
-              </a>
-            </li>
-            <li class="tile">
-              <a class="tile__link" href="#">
-                <span>Триатлон</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="main__video">
-            <video  width="600" type="video/mp4" controls="controls">
-              <source src="http://video.inmedis.ru/STORAGE02/clip_bitrates/i7PwTTy8tVfuYzTYtcHgqptYyw4kt5r1.mp4">
-            </video>
         </section>
         
       </div>
       
-      <div class="aside">
-        
-        <nav class="aside__top-nav">
-          <h2 class="aside-menu__title">Галерея</h2>
-          <ul class="aside-menu">
-            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
-          </ul>
-        </nav>
-        
-        <section>
-          <h2 class="block-title">Календарь</h2>
-          <div>
-            <p style="color: black">Календарь</p>
-          </div>
-        </section>
-        
-        <section>
-          <h2 class="block-title">Наши пратнёры</h2>
-          <ul class="aside__list aside__list--flexible aside__list--wrap">
-            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
-            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
-            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
-          </ul>
-        </section>
-        
-      </div>
     </div>
   </main>
   
