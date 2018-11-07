@@ -51,34 +51,11 @@
   font-size: 14px;
 }
 
-.spoiler__sub-title {
+.spoiler__inner-title {
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .spoiler__header--open + .spoiler__body {
   display: block;
-}
-
-.doc-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.doc-link {
-  display: inline-block;
-
-  color: $black;
-  text-decoration: none;
-}
-
-.doc-link:hover {
-  color: $blue;
-  text-decoration: underline;
-}
-
-.doc-link:active {
-  color: $blue;
-  text-decoration: underline;
 }

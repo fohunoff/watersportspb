@@ -2,7 +2,7 @@ $layout-width: 900px;
 
 .layout {
   max-width: $layout-width;
-
+  
   margin: auto;
   padding: 20px;
 }
@@ -11,6 +11,10 @@ $layout-width: 900px;
   font-size: 20px;
   color: $blue;
   text-transform: uppercase;
+}
+
+.layout__header-image {
+  width: 100%;
 }
 
 .layout__title--center {
