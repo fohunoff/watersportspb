@@ -29,7 +29,20 @@
 }
 
 .header-navigation__item--active {
-  border-bottom: 2px solid white;
+  position: relative;
+}
+
+.header-navigation__item--active::after {
+  position: absolute;
+  content: '';
+
+  left: 0;
+  bottom: -2px;
+
+  width: 10%;
+  height: 2px;
+
+  background-color: white;
 }
 
 /* Взаимодействие */
