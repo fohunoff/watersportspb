@@ -3,6 +3,10 @@
 (function () {
   var news = document.querySelector('.actual-news');
 
+  // Добавляем класс активной новости к первой новости в списке
+  var actualNews = news.querySelector('.actual-news__content');
+  actualNews.classList.add('actual-news__content--active');
+
   if (news !== null) {
     var actualNews = news.querySelectorAll('.actual-news__content');
     var count = 0;
