@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>«Школа высшего спортивного мастерства по водным видам спорта»</title>
+  
+  <link rel="stylesheet" href="css/style.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <img class="logo header-logo" src="img/logo.svg" alt="Logo" width="135">
+      <p class="header__org-name">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
+      <h1 class="header__title">
+        «Школа высшего спортивного мастерства<br>
+        по водным видам спорта»
+      </h1>
+    </div>
+    
+    <nav class="header-navigation">
+      <ul class="container header-navigation__list">
+        <li><a class="header-navigation__item" href="./">Главная</a></li>
+        <li><a class="header-navigation__item" href="#">Об учреждении</a></li>
+        <li><a class="header-navigation__item" href="./sports.html">Виды спорта</a></li>
+        <li><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
+        <li><a class="header-navigation__item" href="#">Новости</a></li>
+        <li><a class="header-navigation__item" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main">
+    <div class="container flex-row"> 
+      
+      <div class="aside">
+        
+        <nav class="aside__top-nav">
+          <h2 class="aside-menu__title">Наша команда</h2>
+          <ul class="aside-menu">
+            <li><a class="aside-menu__item" href="./athletes.html">Спортсмены</a></li>
+            <li><a class="aside-menu__item" href="#">Тренеры</a></li>
+            <li><a class="aside-menu__item" href="./direction.html">Руководство</a></li>
+          </ul>
+        </nav>
+        
+        <h2 class="block-title">Документы</h2>
+        <ul class="aside__list">
+          <li class="aside__item"><a href="./documentation.html">Общие документы</a></li>
+        </ul>
+        
+        <h3 class="block-title">Документы для поступления</h3>
+        <ul class="aside__list">
+          <li class="aside__item"><a href="#">Заголовок 2</a></li>
+          <li class="aside__item"><a href="#">Заголовок 3</a></li>
+        </ul>
+        
+        <h3 class="block-title">Документы для поступления</h3>
+        <ul class="aside__list">
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
+          <li class="aside__item"><a href="#">Заголовок 5</a></li>
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
+          <li class="aside__item"><a href="#">Заголовок 5</a></li>
+        </ul>
+        
+        <h3 class="block-title">План программы</h3>
+        <ul class="aside__list">
+          <li class="aside__item"><a href="#">Заголовок 4</a></li>
+        </ul>
+      </div>
+      
+      <div class="main__content">
+        <section class="layout">
+          <h2 class="layout__title">Новости</h2>
+
+          <div class="layout__content">
+
+            <div class="news">
+              <h3 class="news__title"><a href="#">Заголовок</a></h3>
+              <p class="news__date">Дата 2018-07-11</p>
+  
+              <h3 class="news__title"><a href="#">Заголовок</a></h3>
+              <p class="news__date">Дата 2018-07-11</p>
+  
+              <h3 class="news__title"><a href="#">Заголовок</a></h3>
+              <p class="news__date">Дата 2018-07-11</p>
+            </div>
+
+            <div class="pagination">
+              <span class="pagination__number"><a href="?page=<?= $active_page - 1 ?>">1</a></span>
+              <span class="pagination__number pagination__number--active">2</span>
+              <span class="pagination__number"><a href="?page=<?= $active_page + 1 ?>">3</a></span>
+            </div>
+
+          </div>
+              
+          
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container flex-row footer-justify">
+      <div class="footer-logo">
+        <img class="footer-logo__image" src="img/logo.svg" alt="Logo" width="50">
+        <p class="footer-logo__sub">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
+        <p class="footer-logo__name">
+          «Школа высшего спортивного мастерства<br>
+          по водным видам спорта»
+        </p>
+      </div>
+      
+      <nav>
+        <ul class="footer__links">
+          <li><a class="link" href="#">Главная</a></li>
+          <li><a href="#">Об учреждении</a></li>
+          <li><a href="#">Виды спорта</a></li>
+          <li><a href="#">Спортивная подготовка</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      
+      <div>
+        <p>
+          Крестовский остров, Северная дорога, <br>
+          западная оконечность Гребного канала.
+        </p>
+        
+        <p>Телефоны:</p>
+        <ul class="footer__contacts">
+          <li>Спортивный Отдел +7(901)370-23-48;</li>
+          <li>Бухгалтерия +7(901)373-10-46;</li>
+          <li>Секретарь +7(921)774-71-62;</li>
+          <li>Факс +7(921)789-99-62;</li>
+        </ul>
+        
+        <p>E-mail: <a href="mailto:hssvvs@mail.ru">hssvvs@mail.ru</a></p>        
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/news-slide.js"></script>
+  <script src="js/doc-spoiler.js"></script>
+  
+</body>
+</html>
+
+
