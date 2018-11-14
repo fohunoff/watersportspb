@@ -1,21 +1,30 @@
 @media (max-width: $extra-large) {
   .inner-aside {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     flex-grow: 1;
 
     flex-basis: 30%;
     box-sizing: border-box;
     margin-top: 30px;
-    // margin-bottom: 30px;
 
-    background-color: $gray;
+    // background-color: $gray;
   }
 
   .inner-aside .aside-menu {
     width: 280px;
+    margin: auto;
   }
+}
 
+// Чисто костыльное подгонялово и только для правого меню
+@media (max-width: 1235px) {
+  .second-menu {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
 }
 
 @import "calendar.scss";

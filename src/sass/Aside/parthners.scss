@@ -1,5 +1,5 @@
 .parthners {
-  background-color: $gray;
+  background-color: white;
 }
 
 .parthners__list {
@@ -11,5 +11,18 @@
   .parthners {
     width: 280px;
     flex-grow: 1;
+    background-color: $gray;
+  }
+}
+
+// Чисто костыльное подгонялово и только для правого меню
+@media (max-width: 1235px) {
+  .parthners__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
   }
 }

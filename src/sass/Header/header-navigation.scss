@@ -1,8 +1,9 @@
 .header-navigation {
+  position: relative;
+
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-
 
   background-color: $black;
 }
@@ -37,7 +38,7 @@
   content: '';
 
   left: 0;
-  bottom: -2px;
+  bottom: 0px;
 
   width: 100%;
   height: 2px;
@@ -52,7 +53,7 @@
   content: '';
 
   left: 50%;
-  bottom: -2px;
+  bottom: 0px;
   transform: translateX(-50%);
 
   width: 10%;
@@ -72,4 +73,20 @@
 .header-navigation__item:active {
   color: rgb(192, 192, 192);
   background-color: black;   
+}
+
+
+@media (max-width: $middle) {
+  .header-navigation {
+    font-size: 16px;
+  }
+  .header-navigation__list {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .header-navigation__item {
+    border: none;
+    border-bottom: 1px solid black;
+  }
 }

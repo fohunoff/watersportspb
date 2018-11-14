@@ -4,6 +4,7 @@
 @import "fonts.scss";
 
 
+
 /* Стили без привязки к блоку */
 
 .body {
@@ -39,11 +40,22 @@
   background-color: $blue;
 }
 
+@media (max-width: $middle) {
+  .flex-row {
+    flex-wrap: wrap;
+  }
+
+  .main-doc {
+    display: none;
+  }
+}
+
 
 /* Подключение всех импортов */
 
 @import "Logo/logo.scss";
 
+@import "accordeon.scss";
 @import "Spolier/Spoiler.scss";
 
 @import "Header/header.scss";

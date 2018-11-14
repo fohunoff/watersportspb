@@ -127,3 +127,14 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
     transform: translateY(-50%) translateX(0px)  rotate(45deg);
   }
 }
+
+@media (max-width: $middle) {
+  // .actual-news {
+  //   margin-top: 40px;
+  // }
+
+  .actual-news__title {
+    display: block;
+    text-align: center;
+  }
+}

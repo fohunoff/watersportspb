@@ -18,22 +18,25 @@
   <header class="header">
     
     <div class="container">
-      <img class="logo header-logo" src="img/logo.svg" alt="Logo" width="135">
-      <p class="header__org-name">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
-      <h1 class="header__title">
-        «Школа высшего спортивного мастерства<br>
-        по водным видам спорта»
-      </h1>
+      <div class="logo">
+        <img class="logo__image" src="img/logo.svg" alt="Logo" width="135">
+        <p class="logo__abbreviation">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
+        <h1 class="logo__title">
+          «Школа высшего спортивного мастерства<br>
+          по водным видам спорта»
+        </h1>
+      </div>
     </div>
     
     <nav class="header-navigation">
+      <button class="accordeon">Показать меню</button>
       <ul class="container header-navigation__list">
-        <li><a class="header-navigation__item header-navigation__item--active" href="./">Главная</a></li>
-        <li><a class="header-navigation__item" href="#">Об учреждении</a></li>
-        <li><a class="header-navigation__item" href="./sports.html">Виды спорта</a></li>
-        <li><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
-        <li><a class="header-navigation__item" href="#">Новости</a></li>
-        <li><a class="header-navigation__item" href="#">Контакты</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item header-navigation__item--active " href="./">Главная</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item" href="#">Об учреждении</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item" href="./sports.html">Виды спорта</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item" href="#">Спортивная подготовка</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item" href="#">Новости</a></li>
+        <li class="md-hide-element"><a class="header-navigation__item" href="#">Контакты</a></li>
       </ul>
     </nav>
     
@@ -47,14 +50,15 @@
         
         <nav class="aside__top-nav">
           <h2 class="aside-menu__title">Наша команда</h2>
+          <button class="accordeon">Показать меню</button>
           <ul class="aside-menu">
-            <li><a class="aside-menu__item" href="./athletes.html">Спортсмены</a></li>
-            <li><a class="aside-menu__item" href="#">Тренеры</a></li>
-            <li><a class="aside-menu__item" href="./direction.html">Руководство</a></li>
+            <li class="md-hide-element"><a class="aside-menu__item" href="./athletes.html">Спортсмены</a></li>
+            <li class="md-hide-element"><a class="aside-menu__item" href="#">Тренеры</a></li>
+            <li class="md-hide-element"><a class="aside-menu__item" href="./direction.html">Руководство</a></li>
           </ul>
         </nav>
         
-        <section>
+        <section class="main-doc">
           <h2 class="block-title">Документы</h2>
           <ul class="aside__list">
             <li class="aside__item"><a href="./documentation.html">Общие документы</a></li>
@@ -85,8 +89,9 @@
       <div class="main__content">
         
         <div class="main__layout">
+          <h2 class="actual-news__title block-title">Последние новости</h2>
           <section class="actual-news" >
-            <h2 class="actual-news__title">Последние новости</h2>
+            
             <div class="actual-news__side">
               <article class="actual-news__content actual-news__content--active">
                 <img class="actual-news__image" src="img/1.jpg" width="200" alt="Первая новость" srcset="">
@@ -152,7 +157,7 @@
           </section>
           
           <section class="main__video">
-            <video  width="600" type="video/mp4" controls="controls">
+            <video  width="300" type="video/mp4" controls="controls">
               <source src="http://video.inmedis.ru/STORAGE02/clip_bitrates/i7PwTTy8tVfuYzTYtcHgqptYyw4kt5r1.mp4" />
             </video>
           </section>
@@ -162,7 +167,7 @@
         
         <section class="aside inner-aside">
           
-          <nav class="aside__top-nav">
+          <nav class="aside__top-nav second-menu">
             <h2 class="aside-menu__title">Галерея</h2>
             <ul class="aside-menu">
               <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
@@ -188,14 +193,9 @@
           </section>
           
         </section>
-        
-        
-        
-        
-        
+
       </div>
-      
-      
+       
     </div>
   </main>
   
@@ -240,8 +240,10 @@
     </div>
   </footer>
   
+  <script src="js/navigation-hamburger.js"></script>
   <script src="js/news-slide.js"></script>
   <script src="js/doc-spoiler.js"></script>
+
   
 </body>
 </html>

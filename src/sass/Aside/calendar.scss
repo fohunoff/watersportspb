@@ -8,3 +8,11 @@
     width: 280px;
   }
 }
+
+// Чисто костыльное подгонялово и только для правого меню
+@media (max-width: 1235px) {
+  .calendar {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+}
