@@ -2,6 +2,7 @@
 
 (function () {
   var news = document.querySelector('.actual-news');
+  var showTime = 5000; // Время показа
   
   if (news !== null) {
     // Добавляем класс активной новости к первой новости в списке
@@ -10,7 +11,7 @@
     
     var actualNews = news.querySelectorAll('.actual-news__content');
     var count = 0;
-    var slideInterval = setInterval(nextSlide, 5000);
+    var slideInterval = setInterval(nextSlide, showTime);
     
     var bannerImage = document.createElement('img');
     bannerImage.classList.add('actual-news__banner');
