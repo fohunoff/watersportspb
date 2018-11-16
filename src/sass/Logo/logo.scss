@@ -1,4 +1,59 @@
 .logo {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo__image {
+  padding: 10px;
+}
+
+.logo__content {
+  margin-left: 50px;
+}
+
+@media (max-width: $middle) {
+  .logo {
+    justify-content: center;
+  }
+
+  .logo__image {
+    width: 100px;
+  }
+
+  .logo__title {
+    font-size: 20px;
+  }
+
+  .logo__abbreviation {
+    position: relative;
+    font-size: 0;
+
+    margin-bottom: 20px;
+  }
+
+  .logo__abbreviation:after {
+    position: absolute;
+    content: 'СПб ГУ СК ОР';
+
+    top: 0;
+    left: 0;
+
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $small) {
+  .logo {
+    flex-wrap: wrap;
+  }
+
+  .logo__image {
+    width: 150px;
+  }
+
+  .logo__content {
+    margin-left: 10px;
+  }
 }
