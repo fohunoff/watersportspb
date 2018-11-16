@@ -73,3 +73,33 @@
 .audience__button:active {
   background-color: lighten($blue, 5);
 }
+
+@media (max-width: $extra-large) {
+  .dir-person__photo {
+    width: 350px;
+  }
+}
+
+@media (max-width: $large) {
+  .dir-person {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .dir-person__info {
+    margin: auto;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .dir-person__photo {
+    margin: auto;
+  }
+}
+
+@media (max-width: $small) {
+  .dir-person__photo {
+    width: 260px;
+  }
+}

@@ -35,7 +35,7 @@
 
   .logo__abbreviation:after {
     position: absolute;
-    content: 'СПб ГУ СК ОР';
+    content: 'СПб ГУ Спортиная школа олимпийского резерва';
 
     top: 0;
     left: 0;
@@ -56,4 +56,9 @@
   .logo__content {
     margin-left: 10px;
   }
+
+  .logo__abbreviation:after {
+    font-size: 12px;
+  }
+
 }
