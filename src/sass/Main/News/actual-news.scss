@@ -24,7 +24,7 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-
+    
     width: $block-width;
     
     text-align: right;
@@ -38,6 +38,10 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
     
     flex-grow: 1;
     z-index: 1;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -67,7 +71,7 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
   overflow: hidden;
 }
 
-.actual-news__title {
+.actual-news__header {
   display: none;
 }
 
@@ -85,11 +89,21 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
   background-color: white;
   
   z-index: 1;
-  
-  h3, p {
-    margin: 0;
-    z-index: 2; 
-  }
+}
+
+.actual-news__title,
+.actual-news__date {
+  display: block;
+  margin: 0;
+  z-index: 2;
+}
+
+.actual-news__title {
+  color: $black;
+}
+
+.actual-news__date {
+  color: lighten($black, 20);
 }
 
 .actual-news__image {
@@ -137,52 +151,66 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
 
 @media (max-width: $middle) {
   // .actual-news {
-  //   margin-top: 40px;
-  // }
-
-  .actual-news__title {
-    display: block;
-    text-align: center;
+    //   margin-top: 40px;
+    // }
+    
+    .actual-news__header {
+      display: block;
+      text-align: center;
+    }
   }
-}
+  
+  // Волшебный брейкпоинт чисто для блока новостей
+  
+  @media (max-width: 550px) {
+    .actual-news {
+      display: block;
+      height: auto;
+    }
+    
+    .actual-news__side {
+      display: block;
+      height: auto;
+      
+      text-align: center;
+    }
+    
+    .actual-news__banner {
+      display: none;
+    }
+    
+    .actual-news__image {
+      display: block;
+      width: 100%;
+      
+      margin: auto;
+    }
+    
+    .actual-news__content {
+      width: 100%;
+      padding: 0;
+      // margin-top: 10px;
+      // margin-bottom: 30px;
+    }
+    
+    .actual-news__content:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    .actual-news .show-more {
+      justify-content: center;
+      width: 100%;
+      
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .actual-news__title {
+      display: block;
+      padding: 10px;
+    }
 
-// Волшебный брейкпоинт чисто для блока новостей
-
-@media (max-width: 550px) {
-  .actual-news {
-    display: block;
-    height: auto;
+    .actual-news__date {
+      padding-bottom: 40px;
+    }
   }
-
-  .actual-news__side {
-    display: block;
-    height: auto;
-
-    text-align: center;
-  }
-
-  .actual-news__banner {
-    display: none;
-  }
-
-  .actual-news__image {
-    display: block;
-    width: 90%;
-
-    margin: auto;
-  }
-
-  .actual-news__content {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .actual-news .show-more {
-    justify-content: center;
-    width: 100%;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}

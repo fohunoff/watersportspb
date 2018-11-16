@@ -8,6 +8,10 @@
   background-color: $black;
 }
 
+.header-navigation__title {
+  font-size: 0;
+}
+
 .header-navigation__list {
   display: flex;
   flex-direction: row;
