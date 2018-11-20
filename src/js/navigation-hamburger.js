@@ -12,8 +12,11 @@
    * |-- button.accordeon
    * |-- ul (скрываемый список)
    * |----li.md-hide-element (класс, который отвечает за сокрытие)
+   * |------a.header-navigation__item--active (активная ссылка)
    * |----li.md-hide-element (класс, который отвечает за сокрытие)
+   * |------a.header-navigation__item (ссылка)
    * |----li.md-hide-element (класс, который отвечает за сокрытие)
+   * |------a.header-navigation__item (ссылка)
    * 
    */
 
@@ -21,7 +24,12 @@
   
   // Показываем активный пункт меню (только для верхнего меню)
   var activeLink = document.querySelector('.header-navigation__item--active');
-  activeLink.parentElement.classList.remove('md-hide-element');
+  if (activeLink) {
+    activeLink.parentElement.classList.remove('md-hide-element');
+  } else {
+    // Костыльно показываем главное навигационное меню
+    accordeonButtons[0].nextElementSibling.children[0].classList.remove('md-hide-element');
+  }
 
   /* Замыкание */
   var setAllAccordeons = function (showButton) {
