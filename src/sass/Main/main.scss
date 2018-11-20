@@ -13,6 +13,8 @@
 }
 
 .main__video {
+  height: auto;
+  
   box-sizing: border-box;
   padding: 10px;
   padding-top: 50px;
@@ -20,8 +22,8 @@
   text-align: center;
 }
 
-.main__video video {
-  width: 600px;
+.main__video iframe {
+  width: 100%;
 }
 
 @media (max-width: $extra-large) {
@@ -39,8 +41,8 @@
     flex-grow: 1;
   }
 
-  .main__video video {
-    width: 400px;
+  .main__video iframe {
+    width: 100%;
   }
 }
 
@@ -49,8 +51,8 @@
     flex-grow: 1;
   }
 
-  .main__video video {
-    width: 300px;
+  .main__video iframe {
+    width: 100%;
   }
 }
 
@@ -59,8 +61,8 @@
     flex-grow: 1;
   }
 
-  .main__video video {
-    width: 270px;
+  .main__video iframe {
+    width: 100%;
   }
 }
 
