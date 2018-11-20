@@ -1,7 +1,18 @@
 .calendar {
-  background-color: $gray;
+  background-color: white;
+  color: $black;
 }
 
+#calendar__main-page {
+  box-sizing: border-box;
+  padding: 10px;
+
+  font-size: 14px;
+
+  h2 {
+    font-size: 16px;
+  }
+}
 
 @media (max-width: $extra-large) {
   .calendar {
@@ -11,7 +22,7 @@
 
 // Чисто костыльное подгонялово и только для правого меню
 @media (max-width: 1235px) {
-  .calendar {
+  // .calendar {
 
-  }
+  // }
 }
