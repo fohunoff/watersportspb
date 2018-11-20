@@ -19,23 +19,25 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  position: relative;
+
   /* бэкграунды */
-  &:nth-child(1) {
+  &--rowing {
     background-image: url(../img/tile-rowing.jpg);
   }
-  &:nth-child(2) {
+  &--sail {
     background-image: url(../img/tile-sail.jpg);
   }
-  &:nth-child(3) {
+  &--canoe {
     background-image: url(../img/tile-canoe.jpg);
   }
-  &:nth-child(4) {
+  &--slalom {
     background-image: url(../img/tile-slalom.jpg);
   }
-  &:nth-child(5) {
+  &--motor-boat {
     background-image: url(../img/tile-motor-boat.jpg);
   }
-  &:nth-child(6) {
+  &--triathlon {
     background-image: url(../img/tile-triathlon.jpg);
   }
 }
