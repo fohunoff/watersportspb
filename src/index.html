@@ -11,6 +11,39 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   
+  <!-- fullCalendar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css">
+
+  
+  <style>
+    #calendar__main-page .fc-state-default {
+      border-color: white !important;
+    }
+    
+    #calendar__main-page .fc-widget-header{
+      display: none;
+    }
+
+    #calendar__main-page .fc-widget-content {
+      height: 20px !important;
+      border-color: white;
+    }
+
+    #calendar__main-page .fc-basic-view .fc-body .fc-row {
+      min-height: 2em;
+    }
+
+    #calendar__main-page .fc-content-skeleton tbody {
+      display: none;
+    }
+
+    #calendar__main-page .day__mark-up {
+      border: 1px dashed red;
+      border-radius: 50%;
+      width: 20px;
+      text-align: center;
+    }  
+  </style>
 </head>
 
 <body class="body">
@@ -161,97 +194,104 @@
           
           <section class="main__video">
             <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/3mxXkz40Nhw"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-          </section>
-        </div>
-        
-        
-        
-        <section class="aside inner-aside">
-          
-          <nav class="aside__top-nav second-menu">
-            <h2 class="aside-menu__title">Галерея</h2>
-            <ul class="aside-menu">
-              <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
-              <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
-              <li><a  class="aside-menu__item" href="#">Публикации</a></li>
-            </ul>
-          </nav>
-          
-          <section class="calendar">
-            <h2 class="block-title">Календарь</h2>
-            <div>
-              <p style="color: black">Календарь</p>
-            </div>
-          </section>
-          
-          <section class="parthners">
-            <h2 class="block-title">Наши пратнёры</h2>
-            <ul class="parthners__list">
-              <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
-              <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
-              <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
-            </ul>
-          </section>
-          
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3mxXkz40Nhw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </section>
-
-      </div>
-       
-    </div>
-  </main>
-  
-  <footer class="footer">
-    <div class="container flex-row footer-justify">
-      <div class="footer-logo">
-        <img class="footer-logo__image" src="img/logo.svg" alt="Logo" width="50">
-        <p class="footer-logo__sub">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
-        <p class="footer-logo__name">
-          «Школа высшего спортивного мастерства<br>
-          по водным видам спорта»
-        </p>
       </div>
       
-      <nav>
-        <ul class="footer__links">
-          <li><a class="link" href="#">Главная</a></li>
-          <li><a href="#">Об учреждении</a></li>
-          <li><a href="#">Виды спорта</a></li>
-          <li><a href="#">Спортивная подготовка</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
       
-      <div>
-        <p>
-          Крестовский остров, Северная дорога, <br>
-          западная оконечность Гребного канала.
-        </p>
+      
+      <section class="aside inner-aside">
         
-        <p>Телефоны:</p>
-        <ul class="footer__contacts">
-          <li>Спортивный Отдел +7(901)370-23-48;</li>
-          <li>Бухгалтерия +7(901)373-10-46;</li>
-          <li>Секретарь +7(921)774-71-62;</li>
-          <li>Факс +7(921)789-99-62;</li>
-        </ul>
+        <nav class="aside__top-nav second-menu">
+          <h2 class="aside-menu__title">Галерея</h2>
+          <ul class="aside-menu">
+            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
+            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
+            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
+          </ul>
+        </nav>
         
-        <p>E-mail: <a href="mailto:hssvvs@mail.ru">hssvvs@mail.ru</a></p>        
-      </div>
+        <section class="calendar">
+          <h2 class="block-title"><a href="./calendar">Календарь</a></h2>
+          <div>
+            <div id="calendar__main-page"></div>
+          </div>
+        </section>
+        
+        <section class="parthners">
+          <h2 class="block-title">Наши пратнёры</h2>
+          <ul class="parthners__list">
+            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
+            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
+            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
+          </ul>
+        </section>
+        
+      </section>
+      
     </div>
-  </footer>
-  
-  <script src="js/navigation-hamburger.js"></script>
-  <script src="js/news-slide.js"></script>
-  <script src="js/doc-spoiler.js"></script>
+    
+  </div>
+</main>
 
-  
+<footer class="footer">
+  <div class="container flex-row footer-justify">
+    <div class="footer-logo">
+      <img class="footer-logo__image" src="img/logo.svg" alt="Logo" width="50">
+      <p class="footer-logo__sub">Санкт-Петербургское государственное учреждение спортивная школа олимпийского резерва</p>
+      <p class="footer-logo__name">
+        «Школа высшего спортивного мастерства<br>
+        по водным видам спорта»
+      </p>
+    </div>
+    
+    <nav>
+      <ul class="footer__links">
+        <li><a class="link" href="#">Главная</a></li>
+        <li><a href="#">Об учреждении</a></li>
+        <li><a href="#">Виды спорта</a></li>
+        <li><a href="#">Спортивная подготовка</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    
+    <div>
+      <p>
+        Крестовский остров, Северная дорога, <br>
+        западная оконечность Гребного канала.
+      </p>
+      
+      <p>Телефоны:</p>
+      <ul class="footer__contacts">
+        <li>Спортивный Отдел +7(901)370-23-48;</li>
+        <li>Бухгалтерия +7(901)373-10-46;</li>
+        <li>Секретарь +7(921)774-71-62;</li>
+        <li>Факс +7(921)789-99-62;</li>
+      </ul>
+      
+      <p>E-mail: <a href="mailto:hssvvs@mail.ru">hssvvs@mail.ru</a></p>        
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/locale/ru.js"></script>
+
+<script src="js/navigation-hamburger.js"></script>
+<script src="js/news-slide.js"></script>
+<script src="js/doc-spoiler.js"></script>
+<script src="js/jq-calendar.js"></script>
+
+
 </body>
 </html>

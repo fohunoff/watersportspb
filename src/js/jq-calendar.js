@@ -41,10 +41,16 @@ $(document).ready(function() {
     ]
   });
 
+
+  
   // Календарь на главной странице
   $('#calendar__main-page').fullCalendar({
     locale: 'ru', 
-    navLinks: true, // can click day/week names to navigate views
+    showNonCurrentDates: false,
+    columnHeader: true,
+    aspectRatio: 5,
+    
+    // navLinks: true, // can click day/week names to navigate views
     eventLimit: true, // allow "more" link when too many events
 
     header: {
@@ -53,20 +59,61 @@ $(document).ready(function() {
       right: ''
     },
 
-    contentHeight: 450,
+    contentHeight: 200,
     
-    eventSources: [
-      // your event source
-      {
+    // eventSources: [
+    //   // your event source
+    //   {
+    //     url: './api/calendar.php',
+    //     type: 'GET',
+    //     success: function() {
+    //       var myClass = document.querySelectorAll('.set-round-date');
+    //       console.log(myClass);
+    //     },
+    //     error: function() {
+    //       console.log('there was an error while fetching events!');
+    //     },
+    //     color: '#0284f6',   // a non-ajax option
+    //     textColor: 'white',  // a non-ajax option
+    //     className: 'set-round-date',
+    //   }
+    // ]
+
+    events: function(start, end, timezone, callback) {
+      $.ajax({
         url: './api/calendar.php',
-        type: 'GET',
-        error: function() {
-          console.log('there was an error while fetching events!');
-        },
-        color: '#0284f6',   // a non-ajax option
-        textColor: 'white'  // a non-ajax option
-      }
-    ]
+        dataType: 'json',
+
+        success: function(response) {
+          var events = [];
+          console.log(response);
+
+          $(response).each(function() {
+            events.push({
+              title: $(this).attr('title'),
+              start: $(this).attr('start'), // will be parsed
+            });
+            setRound($(this).attr('start'));
+          });
+          callback(events);
+
+        }
+      });
+    }
   });
   
 });
+
+
+// Кастомный коллбэк
+var setRound = function (dataDate) {
+  try {
+    var dayLink = $('[data-date=' + dataDate + ']')[1].children[0];
+    // console.log('[data-date=' + dataDate + ']');
+    dayLink.classList.add('day__mark-up');
+  } catch (error) {
+    console.log(error.message);
+    console.log('На эту дату нет событий');
+  }
+  
+}
