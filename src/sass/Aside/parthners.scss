@@ -7,6 +7,11 @@
   padding: 20px;
 }
 
+.parthners__item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 
 @media (max-width: $extra-large) {
   .parthners {
@@ -16,13 +21,8 @@
   .parthners__list {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    
     margin-top: 30px;
-  }
-
-  .parthners__item {
-    margin-bottom: 30px;
   }
 }
