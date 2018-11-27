@@ -13,7 +13,7 @@
   
   <!-- fullCalendar -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css">
-
+  
   
   <style>
     #calendar__main-page .fc-state-default {
@@ -23,26 +23,31 @@
     #calendar__main-page .fc-widget-header{
       display: none;
     }
-
+    
     #calendar__main-page .fc-widget-content {
       height: 20px !important;
       border-color: white;
     }
-
+    
     #calendar__main-page .fc-basic-view .fc-body .fc-row {
       min-height: 2em;
     }
-
+    
     #calendar__main-page .fc-content-skeleton tbody {
       display: none;
     }
-
+    
     #calendar__main-page .day__mark-up {
       border: 1px dashed red;
       border-radius: 50%;
       width: 20px;
       text-align: center;
     }  
+
+    /* #calendar__main-page .fc table {
+      width: 290px !important;
+    } */
+    
   </style>
 </head>
 
@@ -91,6 +96,15 @@
             <li class="md-hide-element"><a class="aside-menu__item" href="./athletes.html">Спортсмены</a></li>
             <li class="md-hide-element"><a class="aside-menu__item" href="#">Тренеры</a></li>
             <li class="md-hide-element"><a class="aside-menu__item" href="./direction.html">Руководство</a></li>
+          </ul>
+        </nav>
+        
+        <nav class="aside__top-nav">
+          <h2 class="aside-menu__title">Галерея</h2>
+          <ul class="aside-menu">
+            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
+            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
+            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
           </ul>
         </nav>
         
@@ -155,85 +169,88 @@
           </section>
           
           
-          <section>
-            <h2 class="block-title">Виды спорта</h2>
-            
-            <ul class="tiles">
-              <li class="tile tile--rowing">
-                <a class="tile__link" href="#">
-                  <span>Гребной спорт</span>
-                </a>
-              </li>
-              <li class="tile tile--sail">
-                <a class="tile__link" href="#">
-                  <span>Парусный спорт</span>
-                </a>
-              </li>
-              <li class="tile tile--canoe">
-                <a class="tile__link" href="#">
-                  <span>Гребля на байдарках и каное</span>
-                </a>
-              </li>
-              <li class="tile tile--slalom">
-                <a class="tile__link" href="#">
-                  <span>Гребной слалом</span>
-                </a>
-              </li>
-              <li class="tile tile--motor-boat">
-                <a class="tile__link" href="#">
-                  <span>Водно-моторный спорт</span>
-                </a>
-              </li>
-              <li class="tile tile--triathlon">
-                <a class="tile__link" href="#">
-                  <span>Триатлон</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          
-          <section class="main__video">
-            <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/3mxXkz40Nhw"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </section>
+          <div class="flex-row">
+            <div>
+              <section>
+                <h2 class="block-title">Виды спорта</h2>
+                
+                <ul class="tiles">
+                  <li class="tile tile--rowing">
+                    <a class="tile__link" href="#">
+                      <span>Гребной спорт</span>
+                    </a>
+                  </li>
+                  <li class="tile tile--sail">
+                    <a class="tile__link" href="#">
+                      <span>Парусный спорт</span>
+                    </a>
+                  </li>
+                  <li class="tile tile--canoe">
+                    <a class="tile__link" href="#">
+                      <span>Гребля на байдарках и каное</span>
+                    </a>
+                  </li>
+                  <li class="tile tile--slalom">
+                    <a class="tile__link" href="#">
+                      <span>Гребной слалом</span>
+                    </a>
+                  </li>
+                  <li class="tile tile--motor-boat">
+                    <a class="tile__link" href="#">
+                      <span>Водно-моторный спорт</span>
+                    </a>
+                  </li>
+                  <li class="tile tile--triathlon">
+                    <a class="tile__link" href="#">
+                      <span>Триатлон</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              
+              <section class="main__video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/3mxXkz40Nhw"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </section>
+            </div>
+  
+            <div class="second-menu">
+              <section class="calendar">
+                <h2 class="block-title"><a href="./calendar">Календарь</a></h2>
+                <div>
+                  <div id="calendar__main-page"></div>
+                </div>
+              </section>
+              
+              <section class="parthners">
+                <h2 class="block-title">Наши пратнёры</h2>
+                <ul class="parthners__list">
+                  <li class="parthners__item"><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
+                  <li class="parthners__item"><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
+                  <li class="parthners__item"><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+
       </div>
       
       
       
-      <section class="aside inner-aside">
+      <!-- <section class="aside inner-aside">
         
-        <nav class="aside__top-nav second-menu">
-          <h2 class="aside-menu__title">Галерея</h2>
-          <ul class="aside-menu">
-            <li><a  class="aside-menu__item" href="#">Фото галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Видео галерея</a></li>
-            <li><a  class="aside-menu__item" href="#">Публикации</a></li>
-          </ul>
-        </nav>
         
-        <section class="calendar">
-          <h2 class="block-title"><a href="./calendar">Календарь</a></h2>
-          <div>
-            <div id="calendar__main-page"></div>
-          </div>
-        </section>
         
-        <section class="parthners">
-          <h2 class="block-title">Наши пратнёры</h2>
-          <ul class="parthners__list">
-            <li><img src="img/partner-1.png" width="100" alt="Партнёр 1"></li>
-            <li><img src="img/partner-2.png" width="100" alt="Партнёр 2"></li>
-            <li><img src="img/partner-3.png" width="100" alt="Партнёр 3"></li>
-          </ul>
-        </section>
         
-      </section>
+        
+      </section> -->
       
     </div>
     

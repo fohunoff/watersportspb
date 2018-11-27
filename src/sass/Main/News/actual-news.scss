@@ -2,7 +2,7 @@
 $block-width: 310px;
 
 // Магическая высота, чтобы выровнять голубые линии на макете
-$magic-height-for-slide-and-sidе-top-menu: 317px;
+$magic-height-for-slide-and-sidе-top-menu: 634px;
 
 .actual-news {
   position: relative;
@@ -150,11 +150,7 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
 }
 
 @media (max-width: $middle) {
-  // .actual-news {
-    //   margin-top: 40px;
-    // }
-    
-    .actual-news__header {
+  .actual-news__header {
       display: block;
       text-align: center;
     }

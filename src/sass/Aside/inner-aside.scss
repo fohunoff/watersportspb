@@ -1,3 +1,7 @@
+.second-menu {
+  width: 313px;
+}
+
 @media (max-width: $extra-large) {
   .inner-aside {
     display: flex;
@@ -20,9 +24,10 @@
 }
 
 // Чисто костыльное подгонялово и только для правого меню
-@media (max-width: 1235px) {
+@media (max-width: $middle) {
   .second-menu {
-
+    width: auto;
+    margin: auto;
   }
 }
 

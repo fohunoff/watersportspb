@@ -7,22 +7,22 @@
   padding: 20px;
 }
 
+
 @media (max-width: $extra-large) {
   .parthners {
-    width: 280px;
-    flex-grow: 1;
-    background-color: $gray;
+    width: 310px;
   }
-}
 
-// Чисто костыльное подгонялово и только для правого меню
-@media (max-width: 1235px) {
   .parthners__list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+  }
+
+  .parthners__item {
+    margin-bottom: 30px;
   }
 }
