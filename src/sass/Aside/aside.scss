@@ -5,9 +5,7 @@
   min-width: 280px;
 
   color: white;
-  
   text-align: center;
-  text-transform: uppercase;
 
   background-color: $gray;
 }
@@ -15,6 +13,16 @@
 .aside__top-nav {
   position: relative;
   height: 317px;
+}
+
+.doc-title {
+  box-sizing: border-box;
+  padding: 4px;
+
+  font-size: 16px;
+  color: $black;
+
+  background-color: $dark-gray;
 }
 
 .aside__list {
@@ -40,20 +48,29 @@
 }
 
 .aside__item {
-  box-sizing: border-box;
   width: 100%;
-  padding: 10px 5px;
+
+  box-sizing: border-box;
+  padding: 4px;
+  margin-left: 14px;
+
+  font-size: 14px;
+  text-align: left;
 
   a {
     display: inline-block;
     position: relative;
 
     box-sizing: border-box;
-    padding: 0px 30px;
+    padding: 0px 16px;
 
     color: black;
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+      color: lighten(black, 40);
+    }
 
     &:hover::after {
       position: absolute;
