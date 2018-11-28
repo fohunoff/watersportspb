@@ -48,8 +48,6 @@
 }
 
 .aside__item {
-  width: 100%;
-
   box-sizing: border-box;
   padding: 4px;
   margin-left: 14px;
@@ -65,11 +63,12 @@
     padding: 0px 16px;
 
     color: black;
-    font-weight: bold;
+    font-weight: 300;
     text-decoration: none;
 
     &:hover {
       color: lighten(black, 40);
+      background-color: white;
     }
 
     &:hover::after {
