@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 280px;
+  min-width: 320px;
 
   color: white;
   text-align: center;
@@ -17,12 +17,20 @@
 
 .doc-title {
   box-sizing: border-box;
-  padding: 4px;
+  width: 310px;
+  padding: 4px 16px;
+  // padding-left: 16px;
 
+  text-align: left;
   font-size: 16px;
   color: $black;
+  text-transform: uppercase;
 
-  background-color: $dark-gray;
+  // background-color: $dark-gray;
+
+  a {
+    color: $black;
+  }
 }
 
 .aside__list {

@@ -10,6 +10,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   
+  <!-- 1. Link to jQuery (1.8 or later), -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+  
+  <!-- fotorama.css & fotorama.js. -->
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+  
+  
 </head>
 
 <body class="body">
@@ -54,24 +62,14 @@
           <li class="aside__item"><a href="./documentation.html">Общие документы</a></li>
         </ul>
         
-        <h3 class="block-title">Документы для поступления</h3>
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">Заголовок 2</a></li>
-          <li class="aside__item"><a href="#">Заголовок 3</a></li>
-        </ul>
+        <h3 class="doc-title">Документы для поступления</h3>
+
         
-        <h3 class="block-title">Документы для поступления</h3>
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">Заголовок 4</a></li>
-          <li class="aside__item"><a href="#">Заголовок 5</a></li>
-          <li class="aside__item"><a href="#">Заголовок 4</a></li>
-          <li class="aside__item"><a href="#">Заголовок 5</a></li>
-        </ul>
+        <h3 class="doc-title">Документы для поступления</h3>
+
         
-        <h3 class="block-title">План программы</h3>
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">Заголовок 4</a></li>
-        </ul>
+        <h3 class="doc-title">План программы</h3>
+
       </div>
       
       <div class="main__content">
@@ -113,7 +111,18 @@
             <!-- Прятать, если нет соответствий -->
             <section class="attachment">
               <h2 class="attachment__title">Фото</h2>
-              <p>Слайдер</p>
+              
+              <div class="fotorama"
+                data-width="90%"
+                data-arrows="true"
+                data-click="true"
+                data-swipe="false"
+                data-nav="thumbs"
+                data-loop="true"
+                data-autoplay="true">
+                <img src="http://s.fotorama.io/1.jpg">
+                <img src="http://s.fotorama.io/2.jpg">
+              </div>
             </section>
             
             <!-- Прятать, если нет соответствий -->

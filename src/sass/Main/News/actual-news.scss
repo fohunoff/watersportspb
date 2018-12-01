@@ -1,5 +1,5 @@
 // Ширина текстового блока новостей и ссылки, а также отступ фото новости
-$block-width: 310px;
+$block-width: 300px;
 
 // Магическая высота, чтобы выровнять голубые линии на макете
 $magic-height-for-slide-and-sidе-top-menu: 317px;
@@ -122,6 +122,7 @@ $magic-height-for-slide-and-sidе-top-menu: 317px;
   position: relative;
   
   background-color: lighten($blue, 30);
+  background-color: $gray;
 
   transition: background-color 0.5s;
   
