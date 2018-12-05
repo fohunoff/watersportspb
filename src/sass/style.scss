@@ -7,6 +7,10 @@
 
 /* Стили без привязки к блоку */
 
+.hidden {
+  display: none;
+}
+
 .body {
   font-family: 'Open Sans', 'Tahoma', sans-serif;
   margin: 0;

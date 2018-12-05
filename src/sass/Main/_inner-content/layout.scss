@@ -25,6 +25,12 @@ $layout-width: 900px;
   max-width: $layout-width;
 }
 
+@media (max-width: $middle) {
+  .layout__content img {
+    width: 100% !important;
+  }
+}
+
 @import "tab-navigation.scss";
 
 @import "Document/documentation.scss";
