@@ -74,6 +74,27 @@ gulp.task('clean', function () {
   return del('build');
 });
 
+/* Для копирования стилей в PHP */
+    gulp.task('copy-css', function () {
+      return gulp.src('build/css/**/*.css', {base: 'build'})
+        .pipe(gulp.dest('../watersportspb-php/'));
+    });
+
+    // Удаляем папку css с опцией force,
+    // так как она находится выше расположения фалйа gulp
+    gulp.task('clean-css-in-php', function () {
+      return del([
+        '../watersportspb-php/css'
+      ], {
+        force: true
+      });
+    });
+
+    gulp.task('paste-css-to-php', gulp.series([
+      'clean-css-in-php',
+      'copy-css'
+    ]));
+/* */
 
 /* Сборка */
 gulp.task('build', gulp.series([
@@ -81,6 +102,8 @@ gulp.task('build', gulp.series([
   'copy',
   'style',
   'images',
+  'clean-css-in-php', // Это для php
+  'copy-css' // Это для php
 ]));
 
 /* Запуск сервера и отслеживание изменений */
@@ -91,7 +114,11 @@ gulp.task('serve', function () {
 
   /* добавить watch для js */
 
-  gulp.watch('src/sass/**/*.scss', gulp.series(['style']));
+  gulp.watch('src/sass/**/*.scss', gulp.series([
+    'style',
+    'clean-css-in-php', // Это для php
+    'copy-css' // Это для php
+  ]));
   gulp.watch('src/js/**/*.js').on('change', gulp.series(['copy-js', server.reload]));
   gulp.watch('src/*.html').on('change', gulp.series(['copy-html', server.reload]));
 });
