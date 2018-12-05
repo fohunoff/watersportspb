@@ -14,6 +14,7 @@
 }
 
 .aside-menu__title--blue {
+  border-bottom: 1px solid darken($blue, 30);
   background-color: $blue;
 }
 

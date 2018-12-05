@@ -203,6 +203,45 @@
     </div>
   </footer>
   
+  <div class="modal">
+    <form id="send-mail" class="form" action="index.php" method="POST">
+      
+      <div class="form__field">
+        <label for="sender_name">Представьтесь, пожалуйста <sup>*</sup></label>
+        <input type="text" name="sender_name" id="sender_name" required>
+      </div>
+
+      <fieldset>
+        <legend>Способы обратной связи</legend>
+        <div class="form__flex-block">
+          <div class="form__field">
+            <label for="sender_phone">Телефон</label>
+            <input type="phone" name="sender_phone" id="sender_phone">
+          </div>
+          
+          <div class="form__field">
+            <label for="sender_email">Эл.почта <sup>*</sup></label>
+            <input type="email" name="sender_email" id="sender_email" required>
+          </div>
+        </div>
+      </fieldset>
+      
+      <div class="form__field">
+        <label for="mail_header">Тема письма <sup>*</sup></label>
+        <input type="text" name="mail_header" id="mail_header" required>
+      </div>
+      
+      <div class="form__field">
+        <p>Введите сообщение <sup>*</sup></p>
+        <textarea name="mail_message" cols="30" rows="10" required></textarea>
+      </div>
+      
+      <button type="submit" class="submit">Отправить</button>
+      
+    </form>
+  </div>
+  <div class="overlay"></div>
+  
   <script src="js/news-slide.js"></script>
   <script src="js/doc-spoiler.js"></script>
   

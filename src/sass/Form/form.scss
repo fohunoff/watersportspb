@@ -1,0 +1,85 @@
+.form {
+  width: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__flex-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form p,
+.form legend {
+  font-weight: bolder;
+  background-color: white;
+}
+
+.form sup {
+  color: $red;
+}
+
+.form fieldset {
+  border-color: $gray;
+
+  padding-top: 20px;
+  margin-bottom: 20px;  
+}
+
+
+.form label {
+  font-weight: bolder;
+}
+
+.form input,
+.form textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+
+  border: 1px solid $black;
+}
+
+.form input {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.form textarea {
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 5px;
+
+  width: 100%;
+  resize: vertical;
+}
+
+.form input[name="sender_name"],
+.form input[name="sender_email"],
+.form input[name="mail_header"] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.submit {
+  display: inline-block;
+  padding: 10px 30px;
+
+  color: white;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: 1px solid darken($blue, 40);
+  cursor: pointer;
+}

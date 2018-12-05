@@ -4,9 +4,37 @@
   width: 100vh;
 }
 
+.news-preview {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.news-preview__image {
+  width: 200px;
+}
+
+.news-preview__content {
+  margin-left: 20px;
+}
+
+.news-preview__content .news__title {
+  margin-top: 0;
+}
+
+
 @media (max-width: $extra-large) {
   .news {
     width: 100%;
+  }
+}
+
+@media (max-width: $middle) {
+  .news-preview {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
