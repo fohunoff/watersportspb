@@ -1,0 +1,27 @@
+.public__list {
+  @include list-reset();
+
+}
+
+.public__item {
+  position: relative;
+  
+  margin-bottom: 12px;
+  padding-left: 32px;
+
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    top: 14px;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../img/book.png);
+  }
+}

@@ -1,24 +1,24 @@
-.parthners {
+.partners {
   background-color: white;
 }
 
-.parthners__list {
+.partners__list {
   @include list-reset();
   padding: 20px;
 }
 
-.parthners__item {
+.partners__item {
   margin-bottom: 30px;
   text-align: center;
 }
 
 
 @media (max-width: $extra-large) {
-  .parthners {
+  .partners {
     width: 310px;
   }
 
-  .parthners__list {
+  .partners__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
