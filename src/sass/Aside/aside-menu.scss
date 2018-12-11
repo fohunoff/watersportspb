@@ -46,3 +46,27 @@
 .aside-menu__item:active {
   background-color: darken($gray, 2);
 }
+
+@media (max-width: $middle) {
+  .aside-menu__title--cut {
+    position: relative;
+
+    height: 22px;
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      content: 'Для поступающих';
+
+      width: 260px;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translateX(-50%) translateY(-50%);
+      
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
