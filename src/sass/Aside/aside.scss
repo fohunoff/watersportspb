@@ -12,7 +12,7 @@
 
 .aside__top-nav {
   position: relative;
-  height: 317px;
+  min-height: 317px;
 }
 
 .doc-title {
@@ -101,6 +101,7 @@
   
   .aside__top-nav {
     height: auto;
+    min-height: auto;
   }
 }
 

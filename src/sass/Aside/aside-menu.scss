@@ -11,6 +11,11 @@
   text-transform: uppercase;
   
   background-color: $red;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .aside-menu__title--blue {
@@ -22,7 +27,7 @@
   display: inline-block;
   box-sizing: border-box;
 
-  width: 100%;
+  width: 300px;
   padding: 30px 0;
 
   color: black;
