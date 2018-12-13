@@ -4,7 +4,7 @@
 
 .aside-menu__title {
   margin: 0;
-  padding: 20px;
+  padding: 20px 10px;
 
   font-size: 16px;
   font-weight: 300;
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: $middle) {
-  .aside-menu__title--cut {
+  .link-additional--cut {
     position: relative;
 
     height: 22px;
@@ -60,10 +60,32 @@
 
       width: 260px;
 
-      top: 50%;
+      top: -18px;
       left: 50%;
 
-      transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(0);
+      
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .link-for-students--cut {
+    position: relative;
+
+    height: 22px;
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      content: 'Для занимающихся';
+
+      width: 260px;
+
+      top: -18px;
+      left: 50%;
+
+      transform: translateX(-50%) translateY(0);
       
       font-size: 16px;
       text-align: center;

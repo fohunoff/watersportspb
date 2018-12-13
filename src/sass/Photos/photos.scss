@@ -1,0 +1,29 @@
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo {
+  margin: 10px;
+  
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.photo__fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  width: 90%;
+  z-index: 10;
+}
+
+.photo__fullscreen img {
+  width: 100%;
+}
