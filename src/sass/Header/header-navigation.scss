@@ -80,6 +80,27 @@
 }
 
 
+.youtube-icon {
+  position: relative;
+  padding-right: 60px;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    top: calc(50% - 16px);
+    right: 10px;
+
+    width: 32px;
+    height: 32px;
+
+    // background-color: red;
+    background-image: url(/img/youtube.png);
+    background-size: 32px;
+    background-repeat: no-repeat
+  }
+}
+
 @media (max-width: $middle) {
   .header-navigation {
     font-size: 16px;
