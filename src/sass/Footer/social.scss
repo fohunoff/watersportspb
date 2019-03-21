@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin-top: 20px;
+}
+
+.social__link {
+  margin-right: 10px;
+}
+
+.social__link img {
+  border-radius: 50%;
+  width: 32px;
+}
