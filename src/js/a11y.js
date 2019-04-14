@@ -3,19 +3,20 @@
 (function () {
     var eye = document.querySelector('.eye');
     var eyeLink = eye.querySelector('.eye__link');
+    var notice = eye.querySelector('p');
+    var isNotice = false;
 
     eyeLink.addEventListener('click', function (evt) {
         evt.preventDefault();
 
-        var isNotice = document.querySelector('.eye__notice');
-
         if (isNotice) {
-            console.log('plug');
+            isNotice = !isNotice;
+            notice.classList.toggle('eye__notice');
+            notice.textContent = '';
         } else {
-            var notice = document.createElement('p');
-            notice.classList.add('eye__notice');
+            isNotice = !isNotice;
+            notice.classList.toggle('eye__notice');
             notice.textContent = 'Версия для слабовидящих находится в разработке';
-            eye.appendChild(notice);
         };
     })
 })();
